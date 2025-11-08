@@ -1,0 +1,37 @@
+{
+  "name": "storymapapp",
+  "version": "1.0.0",
+  "description": "StoryMapApp - SPA with hash routing, map markers, form upload, built with Webpack",
+  "main": "src/index.js",
+
+  "homepage": "https://fathullahfitroh.github.io/storymapapp",
+
+  "scripts": {
+    "start": "webpack serve --mode development --open",
+    "build": "webpack --mode production",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+
+  "devDependencies": {
+    "@babel/core": "^7.22.0",
+    "@babel/preset-env": "^7.22.0",
+    "babel-loader": "^9.1.2",
+    "css-loader": "^6.8.1",
+    "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.4",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1",
+    "gh-pages": "^6.0.0"
+  },
+
+  "dependencies": {
+    "idb": "^8.0.3",
+    "leaflet": "^1.9.4"
+  }
+}
